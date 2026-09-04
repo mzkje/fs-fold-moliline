@@ -40,7 +40,7 @@ Multi-node (3 nodes): pass the other nodes as `--peer`.
 
 See docs/WIRE.md.
 
-## Honest limits
+## Limits
 
 - No authentication or encryption; loopback / intranet only.
 - 2-node clusters have no failover (quorum 2/2 is split-brain protection).

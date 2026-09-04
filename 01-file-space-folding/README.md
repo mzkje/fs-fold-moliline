@@ -8,7 +8,7 @@ per file with sha256.
 
 Deduplication containers are useful for trees with repeated content: two
 versions of an app, backup folders, duplicated resources. On such trees `.fs`
-beats zip; on compression-only workloads zip can be smaller (documented).
+is smaller than zip; on compression-only workloads zip can be smaller.
 
 ## Commands
 
@@ -27,7 +27,7 @@ python tools/cross_carrier_check.py     # Python fold -> C# carrier verify
 `FSF781\x00\x01` + manifest length + UTF-8 JSON manifest + zlib pool.
 Details in FORMAT.md.
 
-## Honest limits
+## Limits
 
 - Whole-tree container, no streaming random access.
 - zlib backend only; no filesystem-transparent layer.

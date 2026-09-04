@@ -14,8 +14,8 @@ fs_tool.exe run <file.fs> [version] [entry] [args]
 ```
 
 `run` unfolds the selected version subtree to a temp cache and launches the
-entry executable (fold-and-run demo). Defaults in code point at the author's
-original demo app; pass explicit `version entry` for other folded apps.
+entry executable (fold-and-run demo). Defaults in code point at a demo app
+used during development; pass explicit `version entry` for other folded apps.
 
 Single-file mode: append `.fs` plus the `FSEMBED1 + fs_len + fs_offset`
 footer to the exe to create a self-contained "one file = one app" demo.

@@ -8,5 +8,5 @@
 - Security: restore must reject entries whose rel escapes out_dir; honor max_total
 
 ## v2 (planned)
-- manifest compressed with zlib-9; chunk-level dedupe optional (documented
-  negative result: after file-level dedupe, block-level dedupe adds ~0.3%)
+- manifest compressed with zlib-9; chunk-level dedupe optional (after
+  file-level dedupe, block-level dedupe adds ~0.3%)
