@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""End-to-end model-world demo over MoliBus (Windows).
+"""End-to-end model-world demo over MoliLine (Windows).
 
 Scenario:
   1) build worlds A and B from one GGUF (demo copies the weights twice;
@@ -28,7 +28,7 @@ import time
 import uuid
 
 PKG = pathlib.Path(__file__).resolve().parents[2]
-BIN = PKG / "02-molibus" / "bin"
+BIN = PKG / "02-moliline" / "bin"
 PROCS = []
 
 
@@ -75,7 +75,7 @@ def main():
     a = ap.parse_args()
     out = pathlib.Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
-    note = "visit note: model A entered this world via MoliBus"
+    note = "visit note: model A entered this world via MoliLine"
     res = {"note": note}
     try:
         sys.path.insert(0, str(pathlib.Path(__file__).parent))
@@ -84,7 +84,7 @@ def main():
                                            "world A initial state; not visited")
         res["build_B"] = build_world.build("B", a.gguf, str(out),
                                            "world B initial state; not visited")
-        bus = start(str(BIN / "moli_bus_refactor.exe"),
+        bus = start(str(BIN / "moli_line_refactor.exe"),
                     ["--port", str(a.port),
                      "--workdir", str(out / "buswd")])
         env = dict(os.environ)
@@ -133,3 +133,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

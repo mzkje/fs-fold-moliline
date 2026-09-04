@@ -96,3 +96,4 @@ def test_incremental_rebuild():
 test_basic(); test_random_binary(); test_traversal_guard()
 test_incremental_rebuild()
 print("ALL_TESTS_PASS")
+

@@ -6,3 +6,4 @@ $out = Join-Path $root "fs_tool.exe"
 & $csc /nologo /out:$out (Join-Path $root "fs_tool.cs")
 if ($LASTEXITCODE -ne 0) { Write-Error "fs_tool build failed"; exit 1 }
 Write-Output "fs_tool built: $out"
+

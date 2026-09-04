@@ -1,4 +1,4 @@
-# FS Fold (.fs) & MoliBus
+# FS Fold (.fs) & MoliLine
 
 Two small Windows tools, no extra libraries needed.
 
@@ -21,7 +21,7 @@ python incremental_fold.py <source-folder> <old.fs> [new.fs]
 Note: this is a deduplication container, not a general compressor. On data
 with little duplication, ordinary zip may be smaller.
 
-## MoliBus (`02-molibus/`)
+## MoliLine (`02-moliline/`)
 
 Lets programs on the same computer exchange messages: one program asks,
 another answers; events can be broadcast. It keeps a journal, avoids running
@@ -36,6 +36,7 @@ python run_matrix_refactor.py
 
 ## Notes
 
-- MoliBus has no login or encryption; use it on your own computer only.
+- MoliLine has no login or encryption; use it on your own computer only.
 - Fold only folders you are allowed to copy or share.
 - License: MIT License (see LICENSE).
+

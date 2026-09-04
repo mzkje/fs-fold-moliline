@@ -109,3 +109,4 @@ def verify_fs(fs_path):
         if len(raw) != e["size"] or hashlib.sha256(raw).hexdigest() != e["hash"]:
             bad.append(e["rel"])
     return {"files": len(m["entries"]), "lossless": not bad, "bad": bad[:5]}
+

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""worldgate: a MoliBus node that treats folded worlds (.fs) as live containers.
+"""worldgate: a MoliLine node that treats folded worlds (.fs) as live containers.
 
 Commands (payload of a bus SEND/CMD to "worldgate"):
   ON|NAME     unfold world if needed, boot its model entry, wait ready
@@ -182,3 +182,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

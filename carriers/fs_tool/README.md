@@ -20,3 +20,4 @@ used during development; pass explicit `version entry` for other folded apps.
 Single-file mode: append `.fs` plus the `FSEMBED1 + fs_len + fs_offset`
 footer to the exe to create a self-contained "one file = one app" demo.
 Only fold files you have the right to redistribute.
+

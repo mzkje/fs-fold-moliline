@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""World entry: boots a model as a live MoliBus node.
+"""World entry: boots a model as a live MoliLine node.
 
 Environment:
   MOLI_BUS_PORT  bus port
@@ -108,3 +108,4 @@ while True:
                     ).encode())
     except Exception:
         time.sleep(1)
+

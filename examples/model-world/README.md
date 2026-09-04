@@ -1,6 +1,6 @@
 # Model world example (optional)
 
-A GGUF model is folded into an `.fs` world file. Through MoliBus you can:
+A GGUF model is folded into an `.fs` world file. Through MoliLine you can:
 
 - `ON|A` boot world A (embedded llama.cpp engine — no Ollama),
 - let a live model A enter world B (`ACT|ENTER|B`), write into B's files
@@ -11,7 +11,7 @@ A GGUF model is folded into an `.fs` world file. Through MoliBus you can:
 
 ## Requirements
 
-- Windows (MoliBus binaries).
+- Windows (MoliLine binaries).
 - A GGUF model file.
 - Python with `llama-cpp-python`:
 
@@ -34,3 +34,4 @@ python agent_demo.py --gguf <model.gguf> --out .\agent_demo
   pool instead.
 - An inference library is still required (weights do not execute
   themselves). No Ollama, no manual loader steps.
+

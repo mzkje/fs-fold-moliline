@@ -29,7 +29,7 @@ def main():
     a = ap.parse_args()
     fs_tool = a.fs_tool or str(
         pathlib.Path(__file__).resolve().parents[2] /
-        "02-molibus" / "bin" / "fs_tool.exe")
+        "02-moliline" / "bin" / "fs_tool.exe")
     if not os.path.exists(fs_tool):
         raise SystemExit("fs_tool not found: %s" % fs_tool)
     rng = random.Random(7)
@@ -67,3 +67,4 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
