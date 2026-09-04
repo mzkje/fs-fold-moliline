@@ -36,3 +36,4 @@ $outD = Join-Path $bin "TestOptions.exe"
 if ($LASTEXITCODE -ne 0) { Write-Error "refactor build failed TestOptions"; exit 1 }
 Write-Output "REFACTOR_BUILD_OK"
 
+

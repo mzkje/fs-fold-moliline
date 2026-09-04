@@ -84,7 +84,7 @@ def main():
         unfold(worlds, name)
         w = worlds[name]
         env = dict(os.environ)
-        env["MOLI_BUS_PORT"] = str(port)
+        env["MOLI_LINE_PORT"] = str(port)
         env["MOLI_NAME"] = "model" + name
         env["MOLI_MODEL"] = str(pathlib.Path(w["cache"]) / "model.gguf")
         p = subprocess.Popen([engine_py,
@@ -182,4 +182,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 

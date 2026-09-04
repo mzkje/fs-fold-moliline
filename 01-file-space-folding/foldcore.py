@@ -110,3 +110,4 @@ def verify_fs(fs_path):
             bad.append(e["rel"])
     return {"files": len(m["entries"]), "lossless": not bad, "bad": bad[:5]}
 
+

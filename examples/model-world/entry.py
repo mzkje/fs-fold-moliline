@@ -2,7 +2,7 @@
 """World entry: boots a model as a live MoliLine node.
 
 Environment:
-  MOLI_BUS_PORT  bus port
+  MOLI_LINE_PORT  bus port
   MOLI_NAME      registered name (e.g. modelA)
   MOLI_MODEL     path to model.gguf inside this world
 
@@ -22,7 +22,7 @@ import time
 
 from llama_cpp import Llama
 
-port = int(os.environ["MOLI_BUS_PORT"])
+port = int(os.environ["MOLI_LINE_PORT"])
 name = os.environ["MOLI_NAME"]
 model = os.environ["MOLI_MODEL"]
 state_p = os.path.join(os.path.dirname(model), "state.txt")
@@ -108,4 +108,5 @@ while True:
                     ).encode())
     except Exception:
         time.sleep(1)
+
 

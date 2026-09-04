@@ -234,7 +234,7 @@ def main():
         for p in list(PROCS):
             kill(p)
     print(json.dumps(result, ensure_ascii=False, indent=1))
-    with open(os.path.join(RUNS, "molibus_multinode.json"), "w",
+    with open(os.path.join(RUNS, "moliline_multinode.json"), "w",
               encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=1)
     return 0 if result.get("ok") else 2
@@ -242,4 +242,5 @@ def main():
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
 

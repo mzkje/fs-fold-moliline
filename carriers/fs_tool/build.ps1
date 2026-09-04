@@ -7,3 +7,4 @@ $out = Join-Path $root "fs_tool.exe"
 if ($LASTEXITCODE -ne 0) { Write-Error "fs_tool build failed"; exit 1 }
 Write-Output "fs_tool built: $out"
 
+

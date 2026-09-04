@@ -25,3 +25,4 @@ def run(src):
             "fs_saved_percent": rep["saved_percent"],
             "zip_saved_percent": round(100 * (1 - zsize / orig), 2),
             "fs_vs_zip_smaller_percent": round(100 * (1 - rep["fs_bytes"] / zsize), 2)}
+
