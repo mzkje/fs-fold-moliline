@@ -1,0 +1,4 @@
+# Embedded inference engine for model worlds (CPU wheels on Windows).
+# Install into any Python you will pass as --engine-python:
+#   pip install llama-cpp-python --extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+llama-cpp-python>=0.3

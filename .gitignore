@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+demo*.fs
+_restore/bin/
+*.fs
+results/
+*.tmp
+.engine/
+*.log
